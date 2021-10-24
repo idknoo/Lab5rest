@@ -1,0 +1,17 @@
+package commands;
+import organization.Organization;
+import collection.CollectionWorker;
+import message.Message;
+
+public class RemoveLowerKey implements Command {
+    private final Integer id;
+
+    public RemoveLowerKey(Integer id) {
+        this.id = id;
+    }
+
+    @Override
+    public Message execute(CollectionWorker collectionWorker) {
+        return collectionWorker.removeLowerKey(id);
+    }
+}
