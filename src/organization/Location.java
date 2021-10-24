@@ -27,10 +27,10 @@ public class Location {
 
     @Override
     public String toString() {
-        return "Location{" +
-                "x=" + x +
-                ", y=" + y +
-                ", z=" + z +
-                '}';
+        return "Location: " +
+                "x=" + x + "\n" +
+                "y=" + y + "\n" +
+                "z=" + z;
+
     }
 }

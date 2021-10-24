@@ -48,7 +48,8 @@ public class Address{
      */
     @Override
     public String toString() {
-        return street +" "+ town;
+        return "Address:" +
+                "street='" + street + '\'' + "\n" +
+                "town=" + town;
     }
-
 }

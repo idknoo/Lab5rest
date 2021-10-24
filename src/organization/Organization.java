@@ -137,17 +137,17 @@ public class Organization implements Comparable<Organization>, Serializable {
 
     @Override
     public String toString() {
-        return "Organization{" +
-                "id=" + id +
-                ", name='" + name + '\'' +
-                ", coordinates=" + coordinates +
-                ", creationDate=" + creationDate +
-                ", annualTurnover=" + annualTurnover +
-                ", fullName='" + fullName + '\'' +
-                ", employeesCount=" + employeesCount +
-                ", type=" + type +
-                ", address=" + postalAddress +
-                '}';
+        return "Organization:\n" +
+                "id=" + id + "\n" +
+                "name='" + name + '\'' +'\n' +
+                "coordinates=" + coordinates + "\n" +
+                "creationDate=" + creationDate + "\n" +
+                "annualTurnover=" + annualTurnover + "\n" +
+                "fullName='" + fullName +  '\'' + "\n" +
+                "employeesCount=" + employeesCount + "\n" +
+                "type=" + type + "\n" +
+                "address=" + postalAddress + "\n";
+
     }
 
     public static boolean idIsUnique(Integer id, PriorityQueue<Organization> queue) {
